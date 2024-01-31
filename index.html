@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oliver Quaye</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+      <div class="logo">Oliver Quaye</div>
+      <div>
+        <ul class="nav-links">
+            <li><a href="about">About</a></li>
+            <li><a href="experience">Experience</a></li>
+            <li><a href="projects">Projects</a></li>
+            <li><a href="contacts">Contacts</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Oliver Quaye</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="about" onclick="toggleMenu()">About</a></li>
+                <li><a href="experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="contacts" onclick="toggleMenu()">Contacts</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./Docs/profile-pic.jpg" alt="oliver's profile picture">
+        </div>
+
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Oliver Quaye</h1>
+            <p class="section__text__p2">Full-stack developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2"
+                onclick="window.open('./Docs/my-resume.pdf')">
+                  Download CV
+                </button>
+                <button class="btn btn-color-1"
+                onclick="location.href='./#contact'">
+                  Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./Docs/linkedin.png" alt="My linked-in profile" class="icon"
+                onclick="location.href='https://www.linkedin.com/in/oliver-quaye-9233a626b/?originalSubdomain=gh'">
+
+                <img src="./Docs/github.png" alt="My github profile" class="icon"
+                onclick="location.href='https://github.com/oliverquaye23'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./Docs/about-pic.jpg" 
+                alt="profile picture" 
+                class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./Docs/experience.png" 
+                        alt="experience icon"
+                        class="icon">
+                        <h3>Experience</h3>
+                        <p>1+ years <br>Full-stack web development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./Docs/education.png" 
+                        alt="Education icon"
+                        class="icon">
+                        <h3>Education</h3>
+                        <p>B.Sc. Bachelors Degree <br>Computer Science</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I'm Oliver Quaye, a full-stack developer specializing in frontend web development.
+                        With a strong background in computer science, I bring expertise in both frontend 
+                        and backend web development.  Driven by determination and consistency,
+                        I'm dedicated to making a contribution in the global tech space.Let's collaborate 
+                        and bring your ideas to life! Reach out and let's make magic happen.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./Docs/arrow.png"
+         alt="Arrow icon"
+         class="icon arrow"
+         onclick="location.href='./experience'">
+    </section>
+    <section id="experience">
+       <p class="section__text__p1">Explore My</p>
+       <h1 class="title">Experience</h1>
+       <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+                <h2 class="experience-sub-title">frontend development</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./Docs/checkmark.png" 
+                        alt="checkmark icon"
+                        class="icon">
+                        <div>
+                            <h1>HTML</h1>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./Docs/checkmark.png" 
+                        alt="checkmark icon"
+                        class="icon">
+                        <div>
+                            <h1>CSS</h1>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./Docs/checkmark.png" 
+                        alt="checkmark icon"
+                        class="icon">
+                        <div>
+                            <h1>React</h1>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./Docs/checkmark.png" 
+                        alt="checkmark icon"
+                        class="icon">
+                        <div>
+                            <h1>TypeScript</h1>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./Docs/checkmark.png" 
+                        alt="checkmark icon"
+                        class="icon">
+                        <div>
+                            <h1>JavaScript</h1>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="details-container">
+                <h2 class="experience-sub-title">Backend development</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./Docs/checkmark.png" 
+                        alt="checkmark icon"
+                        class="icon">
+                        <div>
+                            <h1>Node JS</h1>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./Docs/checkmark.png" 
+                        alt="checkmark icon"
+                        class="icon">
+                        <div>
+                            <h1>Express JS</h1>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./Docs/checkmark.png" 
+                        alt="checkmark icon"
+                        class="icon">
+                        <div>
+                            <h1>Flask</h1>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./Docs/checkmark.png" 
+                        alt="checkmark icon"
+                        class="icon">
+                        <div>
+                            <h1>Git</h1>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./Docs/checkmark.png" 
+                        alt="checkmark icon"
+                        class="icon">
+                        <div>
+                            <h1>PostgreSQL</h1>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+       </div>
+       <img src="./Docs/arrow.png"
+         alt="Arrow icon"
+         class="icon arrow"
+         onclick="location.href='./#projects'">
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>
